@@ -465,3 +465,38 @@ a.uk-link-heading:hover {
     justify-content: center;
   }
 }
+
+.ui-hero {
+  position: relative;
+}
+
+.ui-hero::before {
+      width: 513px;
+    height: 550px;
+    position: absolute;
+    bottom: -191px;
+    right: -161px;
+    z-index: -5;
+    content: "";
+   
+    background: radial-gradient(circle, rgba(82, 163, 255, 1) 0%, rgba(255, 255, 255, 1) 46%);
+}
+
+.ui-hero::after {
+  width: 513px;
+  height: 726px;
+  position: absolute;
+  left: -160px;
+  bottom: -250px;
+  z-index: -5;
+  content: "";
+
+background: radial-gradient(circle, rgba(254, 211, 105, 1) 0%, rgba(255, 255, 255, 1) 46%);
+}
+
+.ui-hero-box {
+  position: relative;
+  backdrop-filter: blur(6.5px);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.05);
+}
