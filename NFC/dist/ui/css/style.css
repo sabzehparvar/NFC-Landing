@@ -455,9 +455,10 @@ a.uk-link-heading:hover {
 }
 .ui-hero-box {
   height: 300px;
-  /* backdrop-filter: blur(6.5px); */
   background: #f5f7f980;
-  /* box-shadow: 0 4px 28px rgba(0, 0, 0, 0.05); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/images/Pattern.svg');
 }
 
 .ui-hero-box::before {
@@ -493,4 +494,18 @@ a.uk-link-heading:hover {
   .ui-hero-box {
     height: 250px;
   }
+}
+.ui-text-color-navy-blue {
+  color: #2655e3 !important;
+}
+
+.ui-hero-box-img{
+  width: 170px;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .ui-hero-box-img{
+  width: 120px;
+}
 }
