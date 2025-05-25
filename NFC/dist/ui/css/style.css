@@ -458,7 +458,7 @@ a.uk-link-heading:hover {
   background: #f5f7f980;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../img/images/Pattern.svg');
+  background-image: url("../img/images/Pattern.svg");
 }
 
 .ui-hero-box::before {
@@ -499,13 +499,106 @@ a.uk-link-heading:hover {
   color: #2655e3 !important;
 }
 
-.ui-hero-box-img{
+.ui-hero-box-img {
   width: 170px;
   transition: 0.5s;
 }
 
 @media (max-width: 768px) {
-  .ui-hero-box-img{
-  width: 120px;
+  .ui-hero-box-img {
+    width: 120px;
+  }
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr repeat(5, 1fr) 1.5fr 2fr;
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.parent div {
+  position: relative;
+  padding: 20px;
+  background: rgba(245, 247, 249, 1);
+  border-right: 1px solid rgba(49, 127, 245, 1);
+  border-bottom: 1px solid rgba(49, 127, 245, 1);
+
+
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  border-right: none !important;
+  border-top: 1px solid rgba(49, 127, 245, 1);
+
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 9;
+  border-top: 1px solid rgba(49, 127, 245, 1);
+
+}
+.div3 {
+  grid-area: 1 / 9 / 2 / 10;
+  border-top: 1px solid rgba(49, 127, 245, 1);
+
+}
+.div4 {
+  grid-area: 2 / 1 / 4 / 2;
+  border-right: none !important;
+
+}
+.div5 {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div7 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.div8 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+.div9 {
+  grid-area: 2 / 6 / 3 / 7;
+}
+.div10 {
+  grid-area: 2 / 7 / 3 / 8;
+}
+.div11 {
+  grid-area: 2 / 8 / 4 / 9;
+}
+.div12 {
+  grid-area: 2 / 9 / 4 / 10;
+}
+.div13 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div14 {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.div15 {
+  grid-area: 3 / 5 / 4 / 6;
+}
+.div16 {
+  grid-area: 3 / 6 / 4 / 7;
+}
+.div17 {
+  grid-area: 3 / 7 / 4 / 8;
+}
+
+@media (max-width: 960px) {
+ 
+  .div1, .div3, .div4, .div5,
+  .div11, .div12 {
+    display: none;
+  }
+
+  .div6, .div7, .div8, .div9, .div10,
+  .div13, .div14, .div15, .div16, .div17 {
+    display: block;
+  }
+}
+.ui-section-muted {
+  background: #F5F7F9;
 }
