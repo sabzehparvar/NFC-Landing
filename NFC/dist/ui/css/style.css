@@ -458,7 +458,7 @@ a.uk-link-heading:hover {
   background: #f5f7f980;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../img/images/Pattern.svg");
+  background-image: url("../img/pattern/pattern-hero.svg");
 }
 
 .ui-hero-box::before {
@@ -523,29 +523,23 @@ a.uk-link-heading:hover {
   background: rgba(245, 247, 249, 1);
   border-right: 1px solid rgba(49, 127, 245, 1);
   border-bottom: 1px solid rgba(49, 127, 245, 1);
-
-
 }
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
   border-right: none !important;
   border-top: 1px solid rgba(49, 127, 245, 1);
-
 }
 .div2 {
   grid-area: 1 / 2 / 2 / 9;
   border-top: 1px solid rgba(49, 127, 245, 1);
-
 }
 .div3 {
   grid-area: 1 / 9 / 2 / 10;
   border-top: 1px solid rgba(49, 127, 245, 1);
-
 }
 .div4 {
   grid-area: 2 / 1 / 4 / 2;
   border-right: none !important;
-
 }
 .div5 {
   grid-area: 2 / 2 / 4 / 3;
@@ -588,17 +582,41 @@ a.uk-link-heading:hover {
 }
 
 @media (max-width: 960px) {
- 
-  .div1, .div3, .div4, .div5,
-  .div11, .div12 {
+  .div1,
+  .div3,
+  .div4,
+  .div5,
+  .div11,
+  .div12 {
     display: none;
   }
 
-  .div6, .div7, .div8, .div9, .div10,
-  .div13, .div14, .div15, .div16, .div17 {
+  .div6,
+  .div7,
+  .div8,
+  .div9,
+  .div10,
+  .div13,
+  .div14,
+  .div15,
+  .div16,
+  .div17 {
     display: block;
   }
 }
 .ui-section-muted {
-  background: #F5F7F9;
+  background: #f5f7f9;
+}
+
+.ui-fingerprint-card {
+  height: 95px;
+  width: 200px;
+  box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2);
+
+}
+.ui-fingerprint-card img{
+  position: absolute;
+  top: -50%;
+  right: 28%;
+
 }
