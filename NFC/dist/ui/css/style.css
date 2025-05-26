@@ -716,7 +716,7 @@ a.uk-link-heading:hover {
 
 .card {
   position: sticky;
-  top: 100px;
+  top: 200px;
   padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
@@ -757,7 +757,8 @@ a.uk-link-heading:hover {
 .ui-stack-cards {
   min-height: 400px;
   border-radius: 25px;
-  background: linear-gradient(0deg,#5694FF, #5694FF00, #F5F7F9),
+  background-color: #F5F7F9;
+  background: linear-gradient(0deg, #F5F7F9, #F5F7F9),
 linear-gradient(255.63deg, rgba(86, 148, 255, 0) 63.1%, rgba(86, 148, 255, 0.2) 97.59%);
 
 }
