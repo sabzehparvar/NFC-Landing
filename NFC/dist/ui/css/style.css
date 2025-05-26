@@ -613,39 +613,76 @@ a.uk-link-heading:hover {
   width: 200px;
   box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2);
   transition: 0.5s;
-
 }
-.ui-fingerprint-card img{
+.ui-fingerprint-card img {
   position: absolute;
   top: -50%;
   right: 28%;
-  width: 84px
+  width: 84px;
 }
- 
-.ui-card-reader{
+
+.ui-card-reader {
   width: 254px;
   height: 112px;
   transition: 0.5s;
 }
-.ui-card-reader img{
+.ui-card-reader img {
   width: 88px;
 }
 @media (max-width: 768px) {
- .ui-card-reader{
-  width: 200px;
-  height: 112px;
+  .ui-card-reader {
+    width: 200px;
+    height: 112px;
+  }
+  .ui-card-reader img {
+    width: 50px;
+  }
+  .ui-fingerprint-card {
+    width: 150px;
+    height: 75px;
+  }
+  .ui-fingerprint-card img {
+    top: -50%;
+    right: 28%;
+    width: 50px;
+  }
 }
-.ui-card-reader img{
-  width: 50px;
-}
-.ui-fingerprint-card {
-  width: 150px;
-  height: 75px;
 
+.ui-card-right {
+  max-width: 555px;
+  height: 300px;
+  background-image: url("../img/pattern/pattern-right-card.png"),
+    linear-gradient(
+      107.7deg,
+      #e8ebf8 4.11%,
+      #d4d5fd 25.92%,
+      rgba(156, 159, 250, 0.5) 46.52%,
+      #dbe5f8 70.96%,
+      #b1d2ff 100%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover, cover;
+  border-radius: 25px;
 }
-.ui-fingerprint-card img{
-  top: -50%;
-  right: 28%;
-  width: 50px
+
+.ui-card-left {
+  max-width: 555px;
+  height: 300px;
+  background-image: url("../img/pattern/pattern-left-card.png"),
+    linear-gradient(
+      107.7deg,
+      #e8ebf8 4.11%,
+      #d4d5fd 25.92%,
+      rgba(156, 159, 250, 0.5) 46.52%,
+      #dbe5f8 70.96%,
+      #b1d2ff 100%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover, cover;
+  border-radius: 25px;
 }
+.ui-card-right p.uk-card-title, .ui-card-left p.uk-card-title{
+  font-weight: 500;
 }

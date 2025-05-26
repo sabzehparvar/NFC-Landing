@@ -116,7 +116,7 @@
       <section class="uk-section">
         <div class="uk-section uk-section-default">
           <div class="uk-container">
-            <div class="uk-grid-match uk-grid" uk-grid="">
+            <div class="uk-grid-match uk-grid" uk-grid>
               <div
                 class="uk-width-expand@m uk-first-column uk-flex-center uk-flex-middle"
               >
@@ -264,9 +264,7 @@
                   <div
                     class="uk-card uk-card-default uk-card-body uk-border-rounded uk-position-relative ui-fingerprint-card"
                   >
-                    <img
-                      src="./dist/ui/img/icon/ic-fingerprint-green.svg"
-                    />
+                    <img src="./dist/ui/img/icon/ic-fingerprint-green.svg" />
                     <p class="uk-margin-remove">پرداخت با اثر انگشت</p>
                   </div>
                 </div>
@@ -288,10 +286,10 @@
                   <div
                     class="uk-card uk-card-default uk-card-body uk-border-rounded uk-flex uk-flex-middle uk-padding-small ui-card-reader"
                   >
-                    <p class="uk-margin-remove">گوشی رو به دستگاه کارتخوان نزدیک کن</p>
-                    <img
-                      src="./dist/ui/img/icon/ic-card-reader.svg"
-                    />
+                    <p class="uk-margin-remove">
+                      گوشی رو به دستگاه کارتخوان نزدیک کن
+                    </p>
+                    <img src="./dist/ui/img/icon/ic-card-reader.svg" />
                   </div>
                 </div>
               </div>
@@ -303,7 +301,7 @@
       <section class="uk-section">
         <div class="uk-section ui-section-muted">
           <div class="uk-container">
-            <div class="uk-text-center">
+            <div class="uk-text-center uk-margin-large-bottom">
               <h2 class="uk-heading-large">
                 نکات مهم درباره گوشی‌ها در استفاده از NFC
               </h2>
@@ -312,7 +310,32 @@
                 باشد:
               </p>
             </div>
-           
+            <div uk-grid>
+              <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-default uk-card-body uk-margin-auto ui-card-right">
+                  <div class="uk-card-title">
+                    <img src="./dist/ui/img/icon/ic-android.svg" alt="" />
+                  </div>
+                  <p class="uk-card-title">گوشی‌های اندرویدی</p>
+                  <p class="ui-text-color-light">
+                    گوشی‌های اندرویدی باید از قابلیت NFC برخوردار باشن. جهت
+                    اطمینان از این ویژگی، عبارت NFC را در «تنظیمات» جستجو کنید.
+                  </p>
+                </div>
+              </div>
+              <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-default uk-card-body uk-margin-auto ui-card-left">
+                  <div class="uk-card-title">
+                    <img src="./dist/ui/img/icon/ic-ios.svg" alt="" />
+                  </div>
+                  <p class="uk-card-title">گوشی‌های Apple</p>
+                  <p class="ui-text-color-light">
+                    گوشی‌های اندرویدی باید از قابلیت NFC برخوردار باشن. جهت
+                    اطمینان از این ویژگی، عبارت NFC را در «تنظیمات» جستجو کنید.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
