@@ -780,7 +780,15 @@ a.uk-link-heading:hover {
 }
 .ui-accordion-border-bottom{
   border-bottom: 1px solid #CFE2FF;
+  /* border-bottom: 1px solid;
+
+  border-image: linear-gradient(to right, transparent, #317FF5) 10; */
 }
+.ui-accordion-border-right{
+  border-right: 2px solid #317FF5;
+}
+
+/* override  */
 .uk-accordion .uk-open{
   background-color: #F5F7F9;
 }
