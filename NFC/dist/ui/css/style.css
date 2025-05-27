@@ -775,9 +775,7 @@ a.uk-link-heading:hover {
   );
 }
 
-.uk-accordion-title::before{
-  color: blue !important;
-}
+
 .ui-accordion-border-bottom{
   border-bottom: 1px solid #CFE2FF;
   /* border-bottom: 1px solid;
@@ -791,4 +789,8 @@ a.uk-link-heading:hover {
 /* override  */
 .uk-accordion .uk-open{
   background-color: #F5F7F9;
+}
+.uk-accordion li:last-child{
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.08);
+
 }
