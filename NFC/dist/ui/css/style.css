@@ -695,7 +695,6 @@ a.uk-link-heading:hover {
 }
 
 :root {
-  --card-height: 40vw;
   --card-margin: 4vw;
   --card-top-offset: 0;
   --numcards: 2;
@@ -706,12 +705,17 @@ a.uk-link-heading:hover {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--numcards), var(--card-height));
+  grid-template-rows: repeat(var(--numcards), 40vw);
   gap: var(--card-margin);
   padding-bottom: calc(var(--numcards) * var(--card-top-offset));
   margin-bottom: var(--card-margin);
 }
 
+@media (max-width: 960px) {
+ #stack {
+  grid-template-rows: repeat(var(--numcards), 80vw);
+}
+}
 #card-1 {
   --index: 1;
 }
@@ -764,10 +768,19 @@ a.uk-link-heading:hover {
   min-height: 400px;
   border-radius: 25px;
   background-color: #f5f7f9;
-  background: linear-gradient(0deg, #f5f7f9, #f5f7f9),
-    linear-gradient(
-      255.63deg,
-      rgba(86, 148, 255, 0) 63.1%,
-      rgba(86, 148, 255, 0.2) 97.59%
-    );
+  background: linear-gradient(
+    45deg,
+    rgba(189, 213, 255, 1) 0%,
+    rgba(245, 247, 249, 1) 40%
+  );
+}
+
+.uk-accordion-title::before{
+  color: blue !important;
+}
+.ui-accordion-border-bottom{
+  border-bottom: 1px solid #CFE2FF;
+}
+.uk-accordion .uk-open{
+  background-color: #F5F7F9;
 }
