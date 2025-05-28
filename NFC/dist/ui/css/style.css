@@ -786,6 +786,14 @@ a.uk-link-heading:hover {
   border-right: 2px solid #317FF5;
 }
 
+.ui-features-card{
+  max-width: 410px;
+}
+
+
+
+
+
 /* override  */
 .uk-accordion .uk-open{
   background-color: #F5F7F9;
