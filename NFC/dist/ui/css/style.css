@@ -552,7 +552,7 @@ a.uk-link-heading:hover {
 
 }
 
-.logo-wall div {
+.logo-wall > div {
   position: relative;
   padding: 20px;
   border-top: 1px solid #0e6dcd;
