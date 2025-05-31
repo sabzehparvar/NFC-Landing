@@ -818,3 +818,52 @@ a.uk-link-heading:hover {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
 
 }
+
+
+
+
+/* ------------------  */
+
+.ui-app-download {
+  height: 300px;
+  background: #f5f7f980;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/pattern/pattern-hero.svg");
+}
+
+.ui-app-download::before {
+  width: 655px;
+  height: 336px;
+  position: absolute;
+  bottom: -41px;
+  right: -27px;
+  border-radius: 40%;
+  z-index: -5;
+  content: "";
+
+  background: linear-gradient(
+    309.62deg,
+    #1888F7,
+    #F5F7F9
+  );
+  filter: blur(30px);
+}
+
+.ui-app-download::after {
+  width: 577px;
+  height: 280px;
+  position: absolute;
+  left: -28px;
+  bottom: -43px;
+  z-index: -5;
+  content: "";
+  background: linear-gradient(14.25deg, #FFCE58, #FFCE58);
+  filter: blur(40px);
+}
+
+
+.ui-app-download-img{
+  max-width: 400px;
+  
+}
