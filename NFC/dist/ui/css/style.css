@@ -549,6 +549,9 @@ a.uk-link-heading:hover {
 .logo-wall-div5  { display: none; }
 .logo-wall-div11 { display: none; }
 .logo-wall-div12 { display: none; }
+.logo-wall-div2 { border-right: none !important; }
+.logo-wall-div6 { border-right: none !important; }
+.logo-wall-div13 { border-right: none !important; }
 
 }
 
