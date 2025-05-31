@@ -830,3 +830,75 @@ a.uk-link-heading:hover {
 .ui-app-download-img {
   max-width: 400px;
 }
+
+.grid-wall {
+  display: grid;
+  height: 450px;
+  grid-template-columns: 2fr 1.5fr repeat(5, 1fr) 1.5fr 2fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "div1 div2 div2 div2 div2 div2 div2 div2 div3"
+    "div4 div5 div6 div7 div8 div9 div10 div11 div12"
+    "div4 div5 div13 div14 div15 div16 div17 div11 div12";
+   gap: 0;
+   position: relative;
+  border-bottom: 1px solid #CFE2FF;
+
+}
+/* .grid-wall::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(245, 247, 249, 0.8) 60%);
+  top: -1px;
+  z-index: 2;
+  position: absolute;
+
+} */
+@media (max-width: 960px) {
+  .grid-wall {
+ 
+  grid-template-columns:  repeat(5, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "div2 div2 div2 div2 div2"
+    "div6 div7 div8 div9 div10"
+    "div13 div14 div15 div16 div17";
+}
+.grid-wall-div1  { display: none; }
+.grid-wall-div3  { display: none; }
+.grid-wall-div4  { display: none; }
+.grid-wall-div5  { display: none; }
+.grid-wall-div11 { display: none; }
+.grid-wall-div12 { display: none; }
+.grid-wall-div2 { border-right: none !important; }
+.grid-wall-div6 { border-right: none !important; }
+.grid-wall-div13 { border-right: none !important; }
+
+}
+
+.grid-wall > div {
+  position: relative;
+  padding: 20px;
+  border-top: 1px solid #CFE2FF;
+  border-right: 1px solid #CFE2FF;
+  background: rgba(245, 247, 249, 1);
+ 
+}
+.grid-wall-div1  { grid-area: div1; border-right: none !important; }
+.grid-wall-div2  { grid-area: div2; }
+.grid-wall-div3  { grid-area: div3; }
+.grid-wall-div4  { grid-area: div4; border-right: none !important; }
+.grid-wall-div5  { grid-area: div5; }
+.grid-wall-div6  { grid-area: div6; }
+.grid-wall-div7  { grid-area: div7; }
+.grid-wall-div8  { grid-area: div8; }
+.grid-wall-div9  { grid-area: div9; }
+.grid-wall-div10 { grid-area: div10; }
+.grid-wall-div11 { grid-area: div11; }
+.grid-wall-div12 { grid-area: div12; }
+.grid-wall-div13 { grid-area: div13; }
+.grid-wall-div14 { grid-area: div14; }
+.grid-wall-div15 { grid-area: div15; }
+.grid-wall-div16 { grid-area: div16; }
+.grid-wall-div17 { grid-area: div17; }
