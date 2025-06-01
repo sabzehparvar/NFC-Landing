@@ -1002,3 +1002,34 @@ a.uk-link-heading:hover {
 .grid-wall-div17 {
   grid-area: div17;
 }
+
+.ui-best-payment-app {
+  position: relative;
+  
+}
+.ui-best-payment-app::before {
+  content: url(../img/icon/ic-diamond.svg);
+  position: absolute;
+  left: -120px;
+  top: -50px;
+  transform: scale(0.7) rotateY(180deg);
+  transition: .5s;
+}
+.ui-best-payment-app::after {
+  content: url(../img/icon/ic-diamond.svg);
+  position: absolute;
+  right: -100px;
+  top: 100%;
+  transition: .5s;
+
+}
+
+@media (max-width: 960px) {
+  .ui-best-payment-app::before {
+    transform: scale(0.3) rotateY(180deg);
+  }
+  .ui-best-payment-app::after {
+    transform: scale(0.5);
+    top: 90%;
+  }
+}
