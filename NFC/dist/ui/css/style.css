@@ -1003,24 +1003,41 @@ a.uk-link-heading:hover {
   grid-area: div17;
 }
 
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(8px);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+}
+
 .ui-best-payment-app {
   position: relative;
-  
 }
 .ui-best-payment-app::before {
-  content: url(../img/icon/ic-diamond.svg);
+  content: url(../img/icon/ic-diamond-left.svg);
   position: absolute;
   left: -120px;
   top: -50px;
   transform: scale(0.7) rotateY(180deg);
-  transition: .5s;
+  transition: 0.5s;
+  animation: shake-vertical 0.9s infinite;
 }
 .ui-best-payment-app::after {
-  content: url(../img/icon/ic-diamond.svg);
+  content: url(../img/icon/ic-diamond-right.svg);
   position: absolute;
   right: -100px;
   top: 100%;
-  transition: .5s;
+  transition: 0.5s;
+  animation: shake-vertical 0.9s infinite;
 
 }
 
@@ -1033,3 +1050,6 @@ a.uk-link-heading:hover {
     top: 90%;
   }
 }
+
+
+
