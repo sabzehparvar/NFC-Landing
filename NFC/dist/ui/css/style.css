@@ -640,7 +640,7 @@ a.uk-link-heading:hover {
 
 .ui-fingerprint-card {
   height: 95px;
-  width: 200px;
+  width: 200px !important;
   box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2);
   transition: 0.5s;
 }
@@ -659,10 +659,11 @@ a.uk-link-heading:hover {
 .ui-card-reader img {
   width: 88px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+
   .ui-card-reader {
     width: 200px;
-    height: 112px;
+    height: 100px;
   }
   .ui-card-reader img {
     width: 50px;
@@ -731,21 +732,13 @@ a.uk-link-heading:hover {
   --outline-width: 0px;
 }
 
-#stack {
+.ui-stack {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--numcards), 40vw);
-  gap: var(--card-margin);
-  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-  margin-bottom: var(--card-margin);
+  display: flex;
+  flex-direction: column;
+
 }
 
-@media (max-width: 960px) {
-  #stack {
-    grid-template-rows: repeat(var(--numcards), 80vw);
-  }
-}
 #card-1 {
   --index: 1;
 }
@@ -754,17 +747,9 @@ a.uk-link-heading:hover {
   --index: 2;
 }
 
-.card {
+.ui-card {
   position: sticky;
-  top: 200px;
-  padding-top: calc(var(--index) * var(--card-top-offset));
-}
-
-.card-content {
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: #fffaf2;
-  color: #131212;
-  border-radius: 2rem;
+  top: 100px;
 }
 
 @supports (animation-timeline: works) {
@@ -776,22 +761,12 @@ a.uk-link-heading:hover {
     time-range: 4s;
   }
 
-  .card {
+  .ui-card {
     --index0: calc(var(--index) - 1);
     --reverse-index: calc(var(--numcards) - var(--index0));
     --reverse-index0: calc(var(--reverse-index) - 1);
   }
 
-  .card__content {
-    transform-origin: 50% 0%;
-    will-change: transform;
-
-    --duration: calc(var(--reverse-index0) * 1s);
-    --delay: calc(var(--index0) * 1s);
-
-    animation: var(--duration) linear scale var(--delay) forwards;
-    animation-timeline: cards-element-scrolls-in-body;
-  }
 }
 
 .ui-stack-cards {
@@ -807,9 +782,6 @@ a.uk-link-heading:hover {
 
 .ui-accordion-border-bottom {
   border-bottom: 1px solid #cfe2ff;
-  /* border-bottom: 1px solid;
-
-  border-image: linear-gradient(to right, transparent, #317FF5) 10; */
 }
 .ui-accordion-border-right {
   border-right: 2px solid #317ff5;
@@ -894,15 +866,18 @@ a.uk-link-heading:hover {
   position: relative;
   border-bottom: 1px solid #cfe2ff;
 }
-.grid-wall::before{
-  content: '';
+.grid-wall::before {
+  content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(245, 247, 249, 0.8) 60%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(245, 247, 249, 0.8) 60%
+  );
   top: -1px;
   z-index: 1;
   position: absolute;
-
 }
 @media (max-width: 960px) {
   .grid-wall {
@@ -1023,33 +998,51 @@ a.uk-link-heading:hover {
   position: relative;
 }
 .ui-best-payment-app::before {
-  content: url(../img/icon/ic-diamond-left.svg);
+  content: "";
+  background-image: url(../img/icon/ic-diamond-left.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 179px;
+  height: 163px;
   position: absolute;
   left: -120px;
   top: -50px;
-  transform: scale(0.7) rotateY(180deg);
   transition: 0.5s;
   animation: shake-vertical 0.9s infinite;
 }
+
 .ui-best-payment-app::after {
-  content: url(../img/icon/ic-diamond-right.svg);
+  content: "";
+  background-image: url("../img/icon/ic-diamond-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 190px;
   position: absolute;
   right: -100px;
   top: 90%;
   transition: 0.5s;
   animation: shake-vertical 1.5s infinite;
-
 }
 
 @media (max-width: 960px) {
-  .ui-best-payment-app::before {
-    transform: scale(0.3) rotateY(180deg);
-  }
-  .ui-best-payment-app::after {
-    transform: scale(0.5);
-    top: 90%;
-  }
+.ui-best-payment-app::before {
+ 
+  width: 179px;
+  height: 163px;
+
+  left: -120px;
+  top: -50px;
+ 
 }
 
-
-
+.ui-best-payment-app::after {
+ 
+  width: 220px;
+  height: 190px;
+ 
+  right: -100px;
+  top: 90%;
+ 
+}
+}
