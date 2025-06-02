@@ -389,6 +389,12 @@ a.uk-link-heading:hover {
 .ui-text-color-light {
   color: #2d354a !important;
 }
+.ui-text-color-blue {
+  color: #286ad1 !important;
+}
+.ui-line-heigt-medium {
+  line-height: 2.5rem !important;
+}
 .ui-white-box-text {
   font-weight: 500;
   width: 202px;
@@ -520,7 +526,7 @@ a.uk-link-heading:hover {
     "div4 div5 div13 div14 div15 div16 div17 div11 div12";
   gap: 0;
   position: relative;
-  border-bottom: 1px solid #0e6dcd;
+  border-bottom: 1px solid #317ff5;
 }
 .logo-wall::before {
   content: "";
@@ -572,12 +578,16 @@ a.uk-link-heading:hover {
     border-right: none !important;
   }
 }
+@media (max-width: 480px) {
+  .logo-wall {
+    height: 265px;
+  }
+}
 
 .logo-wall > div {
-  position: relative;
   padding: 20px;
-  border-top: 1px solid #0e6dcd;
-  border-right: 1px solid #0e6dcd;
+  border-top: 1px solid #317ff5;
+  border-right: 1px solid #317ff5;
   background: rgba(245, 247, 249, 1);
 }
 .logo-wall-div1 {
@@ -660,7 +670,6 @@ a.uk-link-heading:hover {
   width: 88px;
 }
 @media (max-width: 960px) {
-
   .ui-card-reader {
     width: 200px;
     height: 100px;
@@ -681,8 +690,8 @@ a.uk-link-heading:hover {
 
 .ui-card-right,
 .ui-card-left {
-  max-width: 555px;
-  height: 350px;
+  max-width: 700px;
+  min-height: 400px;
   background-image: url("../img/pattern/pattern-right-card.png"),
     linear-gradient(
       107.7deg,
@@ -736,7 +745,6 @@ a.uk-link-heading:hover {
   list-style: none;
   display: flex;
   flex-direction: column;
-
 }
 
 #card-1 {
@@ -766,7 +774,6 @@ a.uk-link-heading:hover {
     --reverse-index: calc(var(--numcards) - var(--index0));
     --reverse-index0: calc(var(--reverse-index) - 1);
   }
-
 }
 
 .ui-stack-cards {
@@ -849,7 +856,20 @@ a.uk-link-heading:hover {
   background: linear-gradient(265deg, #ffffff, #ffb400);
   filter: blur(58px);
 }
+@media (max-width: 576px) {
+  .ui-app-download {
+    height: 150px;
+  }
+  .ui-app-download::before {
+    width: 300px;
+    height: 100px;
+  }
 
+  .ui-app-download::after {
+    width: 300px;
+    height: 100px;
+  }
+}
 .ui-app-download-img {
   max-width: 400px;
 }
@@ -1027,23 +1047,19 @@ a.uk-link-heading:hover {
 }
 
 @media (max-width: 960px) {
-.ui-best-payment-app::before {
- 
-  width: 179px;
-  height: 163px;
+  .ui-best-payment-app::before {
+    width: 179px;
+    height: 163px;
 
-  left: -120px;
-  top: -50px;
- 
-}
+    left: -120px;
+    top: -50px;
+  }
 
-.ui-best-payment-app::after {
- 
-  width: 220px;
-  height: 190px;
- 
-  right: -100px;
-  top: 90%;
- 
-}
+  .ui-best-payment-app::after {
+    width: 220px;
+    height: 190px;
+
+    right: -100px;
+    top: 90%;
+  }
 }
