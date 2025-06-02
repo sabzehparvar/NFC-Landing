@@ -454,7 +454,7 @@ a.uk-link-heading:hover {
   }
 }
 .ui-hero-box {
-  height: 300px;
+  height: 256px;
   background: #f5f7f980;
   background-repeat: no-repeat;
   background-position: center center;
@@ -646,9 +646,9 @@ a.uk-link-heading:hover {
 }
 .ui-fingerprint-card img {
   position: absolute;
-  top: -50%;
-  right: 28%;
-  width: 84px;
+  top: -47%;
+  right: 30%;
+  width: 77px;
 }
 
 .ui-card-reader {
@@ -789,6 +789,7 @@ a.uk-link-heading:hover {
 
 .ui-features-card {
   max-width: 410px;
+  height: 290px;
 }
 
 /* override  */
