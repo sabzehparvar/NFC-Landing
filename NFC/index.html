@@ -404,8 +404,10 @@
                 </ul>
               </div>
             </div>
-            <div class="uk-width-1-2@l uk-flex-first@l ">
-              <div class="uk-flex-center uk-flex-middle uk-flex ui-nfc-activation-images">
+            <div class="uk-width-1-2@l uk-flex-first@l">
+              <div
+                class="uk-flex-center uk-flex-middle uk-flex ui-nfc-activation-images"
+              >
                 <div
                   uk-parallax="opacity: 0,1,1; x: 300,-100; y:100,100; end: 60vh + 50%;"
                   class=""
@@ -425,12 +427,13 @@
                     <img
                       data-src="dist/ui/img/images/enable-nfc.webp"
                       class="uk-margin-auto"
-                      
                       uk-img
                     />
                   </div>
                 </div>
-                <div uk-parallax="opacity: 0,1,1; x: -100,50; y:-150,-150; end: 60vh + 50%;">
+                <div
+                  uk-parallax="opacity: 0,1,1; x: -100,50; y:-150,-150; end: 60vh + 50%;"
+                >
                   <div
                     class="uk-card uk-card-default uk-card-body uk-border-rounded uk-flex uk-flex-middle uk-padding-small ui-card-reader"
                   >
@@ -512,7 +515,7 @@
         <div class="uk-container uk-container-large">
           <ul class="uk-list ui-stack">
             <li
-              class="uk-padding-large uk-padding-remove-horizontal ui-card"
+              class="uk-padding-large uk-padding-remove-horizontal"
               id="card-1"
             >
               <h2 class="uk-heading-large uk-text-center uk-padding">
@@ -566,7 +569,7 @@
             </li>
 
             <li
-              class="uk-padding-large uk-padding-remove-horizontal ui-card"
+              class="uk-padding-large uk-padding-remove-horizontal"
               id="card-2"
             >
               <div
@@ -800,5 +803,33 @@
         </div>
       </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const card = document.getElementById("card-1");
+        const cardRect = () => card.getBoundingClientRect();
+        let isSticky;
+
+        function onScroll() {
+          const rect = cardRect();
+          // console.log("bottom" + rect.bottom);
+          // console.log("window" + window.innerHeight);
+
+          if (rect.bottom <= window.innerHeight) {
+            if (!isSticky) {
+              card.classList.add("ui-card");
+              isSticky = true;
+            }
+          } 
+          // else if (rect.bottom > window.innerHeight) {
+          //   if (isSticky) {
+          //     card.classList.remove("ui-card");
+          //     isSticky = false;
+          //   }
+          // }
+        }
+
+        window.addEventListener("scroll", onScroll);
+      });
+    </script>
   </body>
 </html>

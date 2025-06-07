@@ -628,7 +628,6 @@ a.uk-link-heading:hover {
   height: 95px;
   width: 200px;
   box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2) !important;
-background-color: red;
   transition: 0.5s;
 }
 .ui-fingerprint-card img {
