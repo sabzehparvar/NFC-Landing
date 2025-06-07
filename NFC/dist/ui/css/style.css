@@ -626,8 +626,9 @@ a.uk-link-heading:hover {
 
 .ui-fingerprint-card {
   height: 95px;
-  width: 200px !important;
-  box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2);
+  width: 200px;
+  box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2) !important;
+background-color: red;
   transition: 0.5s;
 }
 .ui-fingerprint-card img {
@@ -638,30 +639,47 @@ a.uk-link-heading:hover {
 }
 
 .ui-card-reader {
-  width: 254px;
+  width: 220px;
   height: 112px;
   transition: 0.5s;
+  box-shadow: 0px 15px 40px 0px rgba(130, 169, 175, 0.3) !important;
+
 }
 .ui-card-reader img {
-  width: 88px;
+  width: 60px;
 }
+.ui-enable-nfc-mobile{
+  width: 270px;
+}
+
 @media (max-width: 960px) {
   .ui-card-reader {
     width: 200px;
     height: 100px;
   }
   .ui-card-reader img {
-    width: 50px;
+    width: 40px;
   }
   .ui-fingerprint-card {
-    width: 150px;
+    width: 173px;
     height: 75px;
   }
   .ui-fingerprint-card img {
-    top: -50%;
-    right: 28%;
+    top: -35%;
+    right: 33%;
     width: 50px;
   }
+  .ui-enable-nfc-mobile{
+  width: 200px;
+}
+.ui-nfc-activation-images{
+  margin-top: 50px;
+}
+}
+@media (max-width: 576px) {
+  .ui-enable-nfc-mobile{
+  width: 150px;
+}
 }
 
 .ui-card-right,

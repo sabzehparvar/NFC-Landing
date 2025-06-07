@@ -404,10 +404,10 @@
                 </ul>
               </div>
             </div>
-            <div class="uk-width-1-2@l uk-flex-first@l">
-              <div class="uk-flex-center uk-flex-middle uk-flex">
+            <div class="uk-width-1-2@l uk-flex-first@l ">
+              <div class="uk-flex-center uk-flex-middle uk-flex ui-nfc-activation-images">
                 <div
-                  uk-parallax="opacity: 0,1,1; x: 300,20; y:100,100; end: 50vh + 50%;"
+                  uk-parallax="opacity: 0,1,1; x: 300,-100; y:100,100; end: 60vh + 50%;"
                   class=""
                 >
                   <div
@@ -418,19 +418,19 @@
                   </div>
                 </div>
                 <div
-                  uk-parallax="opacity: 0,1,1; x: 200,-50; end: 50vh + 50%;"
+                  uk-parallax="opacity: 0,1,1; x: 200,0; end: 60vh + 50%;"
                   class=""
                 >
-                  <img
-                    data-src="dist/ui/img/images/enable-nfc.webp"
-                    class="uk-margin-auto"
-                    width="285px"
-                    uk-img
-                  />
+                  <div class="ui-enable-nfc-mobile">
+                    <img
+                      data-src="dist/ui/img/images/enable-nfc.webp"
+                      class="uk-margin-auto"
+                      
+                      uk-img
+                    />
+                  </div>
                 </div>
-                <div
-                  uk-parallax="opacity: 0,1; x: -500,-300; y:-400,-400; end: 90vh;"
-                >
+                <div uk-parallax="opacity: 0,1,1; x: -100,50; y:-150,-150; end: 60vh + 50%;">
                   <div
                     class="uk-card uk-card-default uk-card-body uk-border-rounded uk-flex uk-flex-middle uk-padding-small ui-card-reader"
                   >
@@ -553,9 +553,7 @@
                     </div>
                   </div>
                   <div class="uk-width-1-2@m">
-                    <div
-                      class="uk-flex uk-flex-left@m uk-flex-center uk-visible@m"
-                    >
+                    <div class="uk-flex uk-flex-left@m uk-flex-center">
                       <img
                         data-src="dist/ui/img/images/users.webp"
                         width="310px"
@@ -758,7 +756,7 @@
         </div>
       </section>
       <!-- ---- دانلود اپلیکیشن ۷۲۴  ----  -->
-      <section class="uk-section">
+      <section class="uk-section uk-overflow-hidden">
         <div class="uk-container uk-container-large">
           <div class="uk-position-relative uk-margin-top">
             <div
@@ -786,11 +784,12 @@
               </div>
               <div class="uk-width-1-2@m uk-flex-first@m">
                 <div class="uk-flex uk-flex-center uk-flex-middle">
-                  <div class="uk-padding uk-padding-remove-vertical">
+                  <div
+                    class="uk-padding uk-padding-remove-vertical ui-app-download-img"
+                  >
                     <img
                       data-src="./dist/ui/img/images/iPhone.webp"
                       alt=""
-                      class="ui-app-download-img"
                       uk-img
                     />
                   </div>
