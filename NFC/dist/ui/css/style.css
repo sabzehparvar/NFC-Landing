@@ -462,6 +462,22 @@ a.uk-link-heading:hover {
   filter: blur(40px);
 }
 
+   
+@media (max-width: 700px) {
+.ui-hero-box::after {
+  width: 200px;
+    height: 280px;
+    position: absolute;
+    left: -28px;
+    bottom: -1px;
+}
+.ui-hero-box::before {
+     width: 206px;
+    height: 295px;
+    position: absolute;
+    bottom: -18px;
+}
+}
 @media (max-width: 960px) {
   .ui-hero-box {
     height: 250px;
