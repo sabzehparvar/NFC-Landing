@@ -410,13 +410,13 @@
               >
                 <div
                   uk-parallax="opacity: 0,1,1; x: 300,-100; y:100,100; end: 60vh + 50%;"
-                  class=""
+                  class="ui-fingerprint-card"
                 >
                   <div
-                    class="uk-card uk-card-default uk-card-body uk-border-rounded uk-position-relative ui-fingerprint-card"
+                    class="uk-card uk-card-default uk-card-body uk-border-rounded uk-position-relative uk-flex uk-flex-middle uk-flex-center"
                   >
                     <img src="./dist/ui/img/icon/ic-fingerprint-green.svg" />
-                    <p class="uk-margin-remove">پرداخت با اثر انگشت</p>
+                    <p class="">پرداخت با اثر انگشت</p>
                   </div>
                 </div>
                 <div
@@ -515,7 +515,7 @@
         <div class="uk-container uk-container-large">
           <ul class="uk-list ui-stack">
             <li
-              class="uk-padding-large uk-padding-remove-horizontal"
+              class="uk-padding-large uk-padding-remove-horizontal ui-card"
               id="card-1"
             >
               <h2 class="uk-heading-large uk-text-center uk-padding">
@@ -555,11 +555,10 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="uk-width-1-2@m">
+                  <div class="uk-width-1-2@m ">
                     <div class="uk-flex uk-flex-left@m uk-flex-center">
                       <img
                         data-src="dist/ui/img/images/users.webp"
-                        width="310px"
                         uk-img
                       />
                     </div>
@@ -608,11 +607,11 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="uk-width-1-2@m">
+                  <div class="uk-margin-remove-top uk-width-1-2@m">
                     <div class="uk-flex uk-flex-left@m uk-flex-center">
                       <img
                         data-src="dist/ui/img/images/acceptors.webp"
-                        width="371px"
+                       
                         uk-img
                       />
                     </div>
@@ -803,7 +802,7 @@
         </div>
       </section>
     </main>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         const card = document.getElementById("card-1");
         const cardRect = () => card.getBoundingClientRect();
@@ -830,6 +829,6 @@
 
         window.addEventListener("scroll", onScroll);
       });
-    </script>
+    </script> -->
   </body>
 </html>

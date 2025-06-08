@@ -384,11 +384,10 @@ a.uk-link-heading:hover {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23317FF5%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 @media (max-width: 768px) {
- .uk-text-large{
-  font-size: 1.2rem;
+  .uk-text-large {
+    font-size: 1.2rem;
+  }
 }
-}
-
 
 /* --------------------------------------------------------------------------------------------  */
 
@@ -468,7 +467,11 @@ a.uk-link-heading:hover {
   bottom: -43px;
   z-index: -5;
   content: "";
-  background: linear-gradient(14.25deg, rgba(254, 212, 105, 0.714) -0.78%, rgb(255, 255, 255) 86.69%);
+  background: linear-gradient(
+    14.25deg,
+    rgba(254, 212, 105, 0.714) -0.78%,
+    rgb(255, 255, 255) 86.69%
+  );
   filter: blur(40px);
 }
 
@@ -624,17 +627,21 @@ a.uk-link-heading:hover {
   background: #f5f7f9;
 }
 
-.ui-fingerprint-card {
+.ui-fingerprint-card > div {
   height: 95px;
   width: 200px;
   box-shadow: 10px 15px 40px 0px rgba(90, 73, 73, 0.2) !important;
   transition: 0.5s;
 }
-.ui-fingerprint-card img {
+.ui-fingerprint-card > div img {
   position: absolute;
-  top: -47%;
-  right: 30%;
+  /* top: -47%;
+  right: 30%; */
   width: 77px;
+  margin-top: -45%;
+}
+.ui-fingerprint-card > div p {
+  margin-top: 40px;
 }
 
 .ui-card-reader {
@@ -642,43 +649,69 @@ a.uk-link-heading:hover {
   height: 112px;
   transition: 0.5s;
   box-shadow: 0px 15px 40px 0px rgba(130, 169, 175, 0.3) !important;
-
 }
 .ui-card-reader img {
   width: 60px;
 }
-.ui-enable-nfc-mobile{
+.ui-enable-nfc-mobile {
   width: 270px;
 }
 
 @media (max-width: 960px) {
   .ui-card-reader {
     width: 200px;
-    height: 100px;
+    height: 80px;
   }
   .ui-card-reader img {
     width: 40px;
   }
-  .ui-fingerprint-card {
-    width: 173px;
-    height: 75px;
+  .ui-fingerprint-card{
+    z-index: 2;
   }
-  .ui-fingerprint-card img {
-    top: -35%;
-    right: 33%;
+  .ui-fingerprint-card > div {
+    width: 153px;
+    height: 60px;
+    padding: 17px 10px;
+  }
+  .ui-fingerprint-card > div img {
+    /* top: -35%;
+    right: 33%; */
     width: 50px;
   }
-  .ui-enable-nfc-mobile{
-  width: 200px;
+  .ui-fingerprint-card > div p {
+  margin-top: 20px;
 }
-.ui-nfc-activation-images{
-  margin-top: 50px;
-}
+  .ui-enable-nfc-mobile {
+    width: 200px;
+  }
+  .ui-nfc-activation-images {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 576px) {
-  .ui-enable-nfc-mobile{
-  width: 150px;
-}
+  .ui-enable-nfc-mobile {
+    width: 150px;
+  }
+  .ui-card-reader {
+    width: 132px;
+    height: 68px;
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  .ui-card-reader img {
+    width: 40px;
+  }
+  .ui-fingerprint-card > div {
+    width: 110px;
+    height: 53px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .ui-fingerprint-card > div img {
+    /* top: -35%;
+    right: 33%; */
+    width: 42px;
+  }
 }
 
 .ui-card-right,
@@ -735,7 +768,7 @@ a.uk-link-heading:hover {
 
 .ui-card {
   position: sticky;
-  top: 50px;
+  top: 0px;
 }
 
 .ui-stack-cards {
@@ -748,6 +781,29 @@ a.uk-link-heading:hover {
     rgba(245, 247, 249, 1) 40%
   );
 }
+#card-1 .ui-stack-cards img{
+  width: 310px;
+}
+#card-2 .ui-stack-cards img{
+  width: 360px;
+}
+@media (max-width: 960px) {
+#card-1 .ui-stack-cards img{
+  width: 265px;
+}
+#card-2 .ui-stack-cards img{
+  width: 280px;
+}
+}
+@media (max-width: 576px) {
+#card-1 .ui-stack-cards img{
+  width: 160px;
+}
+#card-2 .ui-stack-cards img{
+  width: 140px;
+}
+}
+
 
 .ui-accordion-border-bottom {
   border-bottom: 1px solid #cfe2ff;
@@ -998,21 +1054,21 @@ a.uk-link-heading:hover {
   box-shadow: none;
 }
 
-.ui-features-icon{
+.ui-features-icon {
   width: 50px;
 }
-.ui-key-points-icon{
+.ui-key-points-icon {
   width: 80px;
 }
 
 @media (max-width: 768px) {
-  .ui-key-points-icon{
-  width: 60px;
-}
-.ui-features-icon{
-  width: 40px;
-}
-.ui-features-card-grid .uk-grid-margin{
-  margin-top:40px ;
-}
+  .ui-key-points-icon {
+    width: 60px;
+  }
+  .ui-features-icon {
+    width: 40px;
+  }
+  .ui-features-card-grid .uk-grid-margin {
+    margin-top: 40px;
+  }
 }
